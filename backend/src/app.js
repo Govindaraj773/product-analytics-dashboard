@@ -7,7 +7,6 @@ import productRoutes from "./routes/productRoutes.js";
 
 const app = express();
 
-// app.use(cors());
 app.use(
   cors({
     origin: "*",
