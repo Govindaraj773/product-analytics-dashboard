@@ -1,10 +1,25 @@
 # Product Analytics Dashboard
 
-This project is developed as part of the Dyne Infotech machine test assignment.
+This project is developed as part of the Dyne Infotech Machine Test Assignment.
 
 The application provides product analytics and insights using uploaded CSV/Excel product data.
 
-## Features
+---
+
+# Live Demo
+
+Frontend (Vercel):  
+https://product-analytics-dashboard-gray.vercel.app/
+
+Backend API (Render):  
+https://product-analytics-dashboard-e9jy.onrender.com
+
+GitHub Repository:  
+https://github.com/Govindaraj773/product-analytics-dashboard.git
+
+---
+
+# Features
 
 - Upload CSV/Excel files
 - Display products in table format
@@ -14,30 +29,46 @@ The application provides product analytics and insights using uploaded CSV/Excel
 - Category-wise product analysis
 - Discount distribution visualization
 - Responsive dashboard UI
+- REST API integration
 
-## Technologies Used
+---
 
-Frontend:
+## Frontend Technologies
 
 - React.js
-- Material UI
+- Material UI (MUI)
 - Recharts
+- Axios
 
-Backend:
+## Backend Technologies
 
 - Node.js
 - Express.js
 
-Database:
+## Database
 
 - PostgreSQL
 
-## Project Structure
+## Deployment
 
-- frontend → React application
-- backend → Node.js and Express API
+- Vercel (Frontend)
+- Render (Backend & PostgreSQL)
 
-## Run Frontend
+---
+
+# Project Structure
+
+```text
+product-analytics-dashboard/
+│
+├── frontend   → React application
+│
+└── backend    → Node.js + Express API
+```
+
+---
+
+# Run Frontend Locally
 
 ```bash
 cd frontend
@@ -45,7 +76,9 @@ npm install
 npm run dev
 ```
 
-## Run Backend
+---
+
+# Run Backend Locally
 
 ```bash
 cd backend
@@ -53,18 +86,35 @@ npm install
 npm run dev
 ```
 
-## Database
+---
 
-PostgreSQL is used for storing uploaded product data.
+# Environment Variables
 
-## Main Functionalities
+## Frontend `.env`
+
+```env
+VITE_API_URL=https://product-analytics-dashboard-e9jy.onrender.com
+```
+
+## Backend `.env`
+
+```env
+DATABASE_URL=your_postgresql_connection_string
+PORT=5000
+```
+
+---
+
+# Main Functionalities
 
 - File upload and processing
 - REST API integration
 - Analytics dashboard
 - Search and filtering
-- Data visualization
+- Data visualization using charts
 
-## Author
+---
+
+# Author
 
 Govindaraj Cholappagol
