@@ -35,7 +35,8 @@ function App() {
 
   const fetchChartData = async () => {
     try {
-      const response = await api.get("/analytics/products-per-category");
+      // const response = await api.get("/analytics/products-per-category");
+      const response = await api.get("/products/products-per-category");
 
       setChartData(response.data);
     } catch (error) {
